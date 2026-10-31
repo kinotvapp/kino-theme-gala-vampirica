@@ -1,8 +1,9 @@
 // A theme's presentation, drawn with the screen kit in whichever theme is active.
-const THEME = {"es": "Gala Vampírica", "en": "Vampire Gala", "hook": "Pasa, la noche es joven desde hace siglos.", "hookEn": "Come in, the night has been young for centuries.", "desc": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo."};
+const THEME = {"id": "gala-vampirica", "es": "Gala Vampírica", "en": "Vampire Gala", "hook": "Pasa, la noche es joven desde hace siglos.", "hookEn": "Come in, the night has been young for centuries.", "desc": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo."};
 const t = (es, en) => ({ text: es, textEn: en });
 
-export async function screen({ state }) {
+export async function screen({ activeTheme }) {
+  const on = activeTheme === THEME.id;
   return {
     type: "Column", padding: { compact: 16, expanded: 32 }, gap: 16,
     children: [
@@ -11,19 +12,18 @@ export async function screen({ state }) {
       { type: "Text", text: THEME.desc },
       { type: "Card", children: [{ type: "Column", gap: 12, children: [
         { type: "Text", ...t("Qué cambia", "What changes"), style: "h3" },
-        { type: "Text", ...t("Al activarlo, tarjetas, botones y barras toman su color y sus formas.", "Once it is on, cards, buttons and bars take its colour and shapes."), color: "muted" },
-        { type: "LinearProgressIndicator", value: state.pressed ? 1 : 0.4 },
-        { type: "ElevatedButton", labelText: "Probar", labelTextEn: "Try it", onPressed: "try" },
+        { type: "Text", ...t("Tarjetas, botones y barras toman su color y sus formas.", "Cards, buttons and bars take its colour and shapes."), color: "muted" },
       ] }] },
-      { type: "Card", variant: "outlined", children: [{ type: "Column", gap: 8, children: [
-        { type: "Text", ...t("Cómo activarlo", "How to turn it on"), style: "h3" },
-        { type: "Text", ...t("Ve a Ajustes ▸ App ▸ Apariencia, elige este tema y pulsa Usar este tema.", "Go to Settings ▸ App ▸ Appearance, pick this theme and press Use this theme.") },
-      ] }] },
+      {
+        type: "ElevatedButton",
+        labelText: on ? "Desactivar" : "Activar",
+        labelTextEn: on ? "Turn off" : "Turn on",
+        onPressed: { go: { useTheme: { theme: on ? null : THEME.id } } },
+      },
     ],
   };
 }
 
-export async function screenEvent({ name, lang }) {
-  if (name !== "try") return null;
-  return { state: { pressed: true }, toast: lang === "es" ? THEME.hook : THEME.hookEn };
+export async function screenEvent() {
+  return null;
 }
