@@ -1,0 +1,87 @@
+{
+  "id": "theme-gala-vampirica",
+  "name": "Gala Vampírica",
+  "version": "1.0.0",
+  "apiVersion": 17,
+  "entry": "plugin.js",
+  "icon": "icon.png",
+  "description": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo.",
+  "author": "kinotvapp",
+  "hosts": [],
+  "categories": [
+    "themes"
+  ],
+  "capabilities": [
+    "screen"
+  ],
+  "screen": {
+    "label": "Gala Vampírica",
+    "labelEn": "Vampire Gala",
+    "opensFrom": [
+      "settings"
+    ],
+    "settingsButton": {
+      "label": "Ver presentación",
+      "labelEn": "See presentation"
+    }
+  },
+  "appThemes": [
+    {
+      "id": "gala-vampirica",
+      "name": {
+        "es": "Gala Vampírica",
+        "en": "Vampire Gala"
+      },
+      "colors": {
+        "accent": "#F27BA5",
+        "onAccent": "#2A0614",
+        "background": "#16070E",
+        "surface": "#260F19",
+        "surfaceHigh": "#361925",
+        "railPanel": "#1E0A13"
+      },
+      "shape": {
+        "cardRadius": 14,
+        "channelRadius": 14,
+        "buttonRadius": 28,
+        "chipRadius": 28,
+        "dialogRadius": 20,
+        "inputRadius": 12
+      },
+      "typography": {
+        "scale": 1.0,
+        "titleScale": 1.15
+      },
+      "tv": {
+        "typography": {
+          "scale": 1.0
+        }
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#F27BA5",
+            "#FFB3C6",
+            "#E9A23B"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 0,
+          "max": 32
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.3
+        }
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#16070E",
+          "#2F0D1E"
+        ],
+        "angle": 135
+      }
+    }
+  ]
+}
