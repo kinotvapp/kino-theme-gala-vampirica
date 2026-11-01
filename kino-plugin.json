@@ -1,7 +1,7 @@
 {
   "id": "theme-gala-vampirica",
   "name": "Gala Vampírica",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "apiVersion": 18,
   "entry": "plugin.js",
   "icon": "icon.png",
@@ -81,6 +81,10 @@
           "#2F0D1E"
         ],
         "angle": 135
+      },
+      "price": {
+        "kinos": 10,
+        "payTo": "8b97f0011f9d4594d269edc4afb3a0ee10e394abf54b0a40d90ca83f8f7d6a0e"
       }
     }
   ]
