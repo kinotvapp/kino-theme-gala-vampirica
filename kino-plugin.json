@@ -1,8 +1,8 @@
 {
   "id": "theme-gala-vampirica",
   "name": "Gala Vampírica",
-  "version": "1.0.2",
-  "apiVersion": 17,
+  "version": "1.0.3",
+  "apiVersion": 18,
   "entry": "plugin.js",
   "icon": "icon.png",
   "description": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo.",
