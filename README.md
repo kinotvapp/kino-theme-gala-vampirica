@@ -8,4 +8,4 @@ Tema para [Kino](https://github.com/kinotvapp/kino-light). Cambia los colores, e
 
 En Kino, escribe `kinotvapp/kino-theme-gala-vampirica` en **Plugins ▸ Agregar un plugin**. Después ábrelo y pulsa **Activar**.
 
-Necesita Kino 0.9.80 o superior.
+Necesita Kino 0.9.81 o superior.
