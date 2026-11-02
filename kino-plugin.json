@@ -1,7 +1,7 @@
 {
   "id": "theme-gala-vampirica",
-  "name": "Gala Vampírica",
-  "version": "1.0.4",
+  "name": "Drácula",
+  "version": "1.1.0",
   "apiVersion": 18,
   "entry": "plugin.js",
   "icon": "icon.png",
@@ -15,8 +15,8 @@
     "screen"
   ],
   "screen": {
-    "label": "Gala Vampírica",
-    "labelEn": "Vampire Gala",
+    "label": "Drácula",
+    "labelEn": "Dracula",
     "opensFrom": [
       "settings"
     ],
@@ -29,16 +29,16 @@
     {
       "id": "gala-vampirica",
       "name": {
-        "es": "Gala Vampírica",
-        "en": "Vampire Gala"
+        "es": "Drácula",
+        "en": "Dracula"
       },
       "colors": {
         "accent": "#F27BA5",
-        "onAccent": "#2A0614",
-        "background": "#16070E",
-        "surface": "#260F19",
-        "surfaceHigh": "#361925",
-        "railPanel": "#1E0A13"
+        "onAccent": "#2A0613",
+        "background": "#14040A",
+        "surface": "#260A14",
+        "surfaceHigh": "#3B1322",
+        "railPanel": "#1D0710"
       },
       "shape": {
         "cardRadius": 14,
@@ -61,8 +61,8 @@
         "colors.accent": {
           "swatches": [
             "#F27BA5",
-            "#FFB3C6",
-            "#E9A23B"
+            "#E11D48",
+            "#F3E8D6"
           ]
         },
         "shape.cardRadius": {
@@ -77,14 +77,48 @@
       "background": {
         "type": "gradient",
         "colors": [
-          "#16070E",
-          "#2F0D1E"
+          "#14040A",
+          "#4A0D24"
         ],
-        "angle": 135
+        "angle": 185
       },
       "price": {
         "kinos": 10,
         "payTo": "8b97f0011f9d4594d269edc4afb3a0ee10e394abf54b0a40d90ca83f8f7d6a0e"
+      },
+      "logo": {
+        "decor": {
+          "paths": [
+            {
+              "d": "M -104 0 A 104 104 0 1 1 104 0 A 104 104 0 1 1 -104 0 Z",
+              "fill": "#000000"
+            },
+            {
+              "d": "M -100 0 A 100 100 0 1 1 100 0 A 100 100 0 1 1 -100 0 Z",
+              "fill": "#F4EBD6"
+            },
+            {
+              "d": "M -66 -42 A 14 14 0 1 1 -38 -42 A 14 14 0 1 1 -66 -42 Z M 36 -58 A 10 10 0 1 1 56 -58 A 10 10 0 1 1 36 -58 Z M 43 22 A 17 17 0 1 1 77 22 A 17 17 0 1 1 43 22 Z M -41 52 A 11 11 0 1 1 -19 52 A 11 11 0 1 1 -41 52 Z M -72 18 A 8 8 0 1 1 -56 18 A 8 8 0 1 1 -72 18 Z M 11 -18 A 7 7 0 1 1 25 -18 A 7 7 0 1 1 11 -18 Z",
+              "fill": "#E2D5B6"
+            },
+            {
+              "d": "M -74 -10 Q -52 -38 -26 -18 Q -16 -32 -10 -24 L -6 -40 L 0 -28 L 6 -40 L 10 -24 Q 16 -32 26 -18 Q 52 -38 74 -10 Q 54 -14 42 6 Q 28 -8 16 8 Q 8 0 0 20 Q -8 0 -16 8 Q -28 -8 -42 6 Q -54 -14 -74 -10 Z",
+              "fill": "#14040A"
+            },
+            {
+              "d": "M -353 -172 C -345 -152 -323 -140 -323 -128 A 30 30 0 1 1 -383 -128 C -383 -140 -361 -152 -353 -172 Z",
+              "fill": "#000000"
+            },
+            {
+              "d": "M -353 -168 C -345 -152 -327 -140 -327 -128 A 26 26 0 1 1 -379 -128 C -379 -140 -361 -152 -353 -168 Z",
+              "fill": "#C4122F"
+            },
+            {
+              "d": "M -345 -130 A 14 14 0 0 1 -337 -118 L -342 -118 A 9 9 0 0 0 -345 -124 Z",
+              "fill": "#FF8FA3"
+            }
+          ]
+        }
       }
     }
   ]
