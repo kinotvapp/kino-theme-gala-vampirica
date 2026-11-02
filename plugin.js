@@ -1,5 +1,5 @@
 // A theme's presentation, drawn with the screen kit in whichever theme is active.
-const THEME = {"id": "gala-vampirica", "es": "Gala Vampírica", "en": "Vampire Gala", "hook": "Pasa, la noche es joven desde hace siglos.", "hookEn": "Come in, the night has been young for centuries.", "desc": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo."};
+const THEME = {"id": "gala-vampirica", "es": "Drácula", "en": "Dracula", "hook": "Bienvenido a mi castillo. Entra por tu voluntad.", "hookEn": "Welcome to my castle. Enter freely.", "desc": "Burdeos de terciopelo y rosa sangre para noches eternas en el castillo."};
 const t = (es, en) => ({ text: es, textEn: en });
 
 export async function screen({ activeTheme }) {
